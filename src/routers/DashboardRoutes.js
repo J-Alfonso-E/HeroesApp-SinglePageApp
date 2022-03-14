@@ -16,7 +16,7 @@ export const DashboardRoutes = () => {
                     <Route path="dc" element={<DCScreen />} />
                     <Route path="search" element={<SearchScreen />} />
                     {/* Ruta para pantalla de Heroe*/}
-                    <Route path="heroes" element={<HeroesScreen />} />
+                    <Route path="hero/:HeroId" element={<HeroesScreen />} /> {/* Los 2 puntos y un nombre sive para decir que es una varable y se puede tener la informacion en donde se renderiza*/}
                     <Route path="/" element={<MarvelScreen />} />
                 </Routes>
             </div>
