@@ -8,16 +8,18 @@ import { HeroesScreen } from "../components/Heroes/HeroesScreen";
 export const DashboardRoutes = () => {
     return (
         <>
-        <Navbar />
-            <Routes>
-                
-                <Route path="marvel" element={<MarvelScreen />} />
-                <Route path="dc" element={<DCScreen />} />
-                <Route path="search" element={<SearchScreen />} />
-                {/* Ruta para pantalla de Heroe*/}
-                <Route path="heroes" element={<HeroesScreen />} />
-                <Route path="/" element={<MarvelScreen />} />
-            </Routes>
+            <Navbar />
+            <div className="container">
+                <Routes>
+
+                    <Route path="marvel" element={<MarvelScreen />} />
+                    <Route path="dc" element={<DCScreen />} />
+                    <Route path="search" element={<SearchScreen />} />
+                    {/* Ruta para pantalla de Heroe*/}
+                    <Route path="heroes" element={<HeroesScreen />} />
+                    <Route path="/" element={<MarvelScreen />} />
+                </Routes>
+            </div>
         </>
     )
 }

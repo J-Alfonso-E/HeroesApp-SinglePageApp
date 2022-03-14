@@ -1,9 +1,12 @@
 import React from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink, useNavigate } from 'react-router-dom'
 
 export const Navbar = () => {
 
+    const Navigate = useNavigate();
+
     const handdleLogout = () => {
+        Navigate('/login', {replace: true});
         console.log('LogOut');
     }
 
