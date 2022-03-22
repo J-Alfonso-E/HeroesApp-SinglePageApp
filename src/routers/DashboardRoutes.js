@@ -4,8 +4,10 @@ import { SearchScreen } from "../components/search/SeachScreen";
 import { DCScreen } from "../components/dc/DCScreen";
 import { Navbar } from "../components/ui/Navbar";
 import { HeroesScreen } from "../components/Heroes/HeroesScreen";
+import React from "react";
 
 export const DashboardRoutes = () => {
+    
     return (
         <>
             <Navbar />

@@ -1,3 +1,4 @@
+import React from "react";
 import { getHeroesByPublisher } from "../../selectors/getHeroesByPublisher";
 import { HeroCard } from "./HeroCard";
 

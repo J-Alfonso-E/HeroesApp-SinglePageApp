@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Routes, Route, Link, BrowserRouter } from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import { LoginScreen } from "../components/Login/loginScreen";
 
 import { DashboardRoutes } from "./DashboardRoutes";

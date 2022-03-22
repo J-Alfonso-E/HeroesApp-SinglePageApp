@@ -42,6 +42,13 @@ export const Navbar = () => {
                     >
                         Heroes
                     </NavLink>
+
+                    <NavLink
+                        className="nav-item nav-link"
+                        to="/search"
+                    >
+                        Search
+                    </NavLink>
                 </div>
             </div>
 
