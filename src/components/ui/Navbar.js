@@ -1,11 +1,26 @@
-import React from 'react'
-import { Link, NavLink, useNavigate } from 'react-router-dom'
+import React, {useContext} from 'react';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
+import { AuthContext } from '../../auth/authContext';
+import { types } from '../../types/types';
+
 
 export const Navbar = () => {
+
+    const {user, dispatch} = useContext(AuthContext);
+    const usuario = user.name;
+
+    
 
     const Navigate = useNavigate();
 
     const handdleLogout = () => {
+
+        const action = {
+            types: types.logout
+        }
+
+        dispatch(action);
+
         Navigate('/login', {replace: true});
         console.log('LogOut');
     }
@@ -56,7 +71,7 @@ export const Navbar = () => {
                 <ul className="navbar-nav ml-auto">
 
                     <span className="nav-item nav-link text-info">
-                        Poncho
+                        {usuario}
                     </span>
 
                     <button
