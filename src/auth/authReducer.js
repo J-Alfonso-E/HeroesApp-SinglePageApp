@@ -6,24 +6,22 @@ import { types } from '../types/types';
 };*/
 
 export const authReducer = (state = {}, action) => {
-    console.log(state);
-    console.log(action);
-    switch (action.type) {
+    //console.log(state);
+    //console.log(action);
+    //console.log(types.logout);
+    switch ( action.type ) {
         case types.login:
-            console.log("Se ha asignado un usuario");
             return {
-                ...action.payload, 
+                ...action.payload,
                 logged: true
             }
 
-            case types.logout:
-                console.log("Ha cerrado session el usuario");
-                return {
-                    logged: false
-                }
-
-            default:
-                console.log("Caso predeterminado");
-                break;
+        case types.logout:
+            return {
+                logged: false
+            }
+    
+        default:
+            return state;
     }
 }
