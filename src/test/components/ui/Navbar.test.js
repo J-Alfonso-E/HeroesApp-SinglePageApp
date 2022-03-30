@@ -1,8 +1,8 @@
 import { mount } from 'enzyme';
 import { MemoryRouter } from 'react-router-dom';
-import { AuthContext } from '../../../../auth/authContext';
-import { Navbar } from '../../../../components/ui/Navbar';
-import { types } from '../../../../types/types';
+import { AuthContext } from '../../../auth/authContext';
+import { Navbar } from '../../../components/ui/Navbar';
+import { types } from '../../../types/types';
 
 const mockNavigate = jest.fn(); //Funcion de prueba de useNavigate, forzosamente se requiere que comience con "mock"
 
