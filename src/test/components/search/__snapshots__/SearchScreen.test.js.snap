@@ -1,0 +1,146 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas con el SearchScreen Snapshot vacio 1`] = `
+<div>
+  <h1>
+    SearchScreen
+  </h1>
+  <hr />
+  <div
+    className="row"
+  >
+    <div
+      className="col-5"
+    >
+      <h4>
+        Buscar
+      </h4>
+      <hr />
+      <form
+        onSubmit={[Function]}
+      >
+        <input
+          autoComplete="off"
+          className="form-control"
+          name="searchText"
+          onChange={[Function]}
+          placeholder="Buscar un Heroe"
+          type="text"
+          value=""
+        />
+        <button
+          className="btn btn-primary mt-1"
+          type="submit"
+        >
+          Buscar
+        </button>
+      </form>
+    </div>
+    <div
+      className="col-7"
+    >
+      <h4>
+        Resultado
+      </h4>
+      <div
+        className="alert alert-info"
+      >
+        Buscar un heroe
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Pruebas con el SearchScreen debe de mostrar la imagen de Batman y el campo de busqueda con batman 1`] = `
+<div>
+  <h1>
+    SearchScreen
+  </h1>
+  <hr />
+  <div
+    className="row"
+  >
+    <div
+      className="col-5"
+    >
+      <h4>
+        Buscar
+      </h4>
+      <hr />
+      <form
+        onSubmit={[Function]}
+      >
+        <input
+          autoComplete="off"
+          className="form-control"
+          name="searchText"
+          onChange={[Function]}
+          placeholder="Buscar un Heroe"
+          type="text"
+          value="batman"
+        />
+        <button
+          className="btn btn-primary mt-1"
+          type="submit"
+        >
+          Buscar
+        </button>
+      </form>
+    </div>
+    <div
+      className="col-7"
+    >
+      <h4>
+        Resultado
+      </h4>
+      <div
+        className="col-md-3 animate__animated animate__fadeIn"
+      >
+        <div
+          className="card"
+        >
+          <div
+            className="row no-gutters"
+          >
+            <img
+              alt="Batman"
+              className="card-img"
+              src="/assets/dc-batman.jpg"
+            />
+          </div>
+          <div
+            className="col-8"
+          >
+            <div
+              className="card-body"
+            >
+              <h5
+                className="card-title"
+              >
+                Batman
+              </h5>
+              <p
+                className="card-text"
+              >
+                Bruce Wayne
+              </p>
+              <p
+                className="card-text"
+              >
+                Detective Comics #27
+              </p>
+              <a
+                href="/hero/dc-batman"
+                onClick={[Function]}
+              >
+                 Mas... 
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
