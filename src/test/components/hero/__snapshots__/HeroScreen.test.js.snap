@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en heroScreen Debe de mostrar un heroe 1`] = `
+<div>
+  <div
+    className="row mt-5"
+  >
+    <div
+      className="col-4 animate__animated animate__bounceInLeft"
+    >
+      <img
+        alt="Captain America"
+        className="img-thumbnail"
+        src="/assets/marvel-captain.jpg"
+      />
+    </div>
+    <div
+      className="col-8"
+    >
+      <h3>
+        Captain America
+      </h3>
+      <ul
+        className="list-group animate__animated animate__bounceInRight"
+      >
+        <li
+          className="list-group-item"
+        >
+           
+          <b>
+            Alter Ego:
+          </b>
+           
+          Steve Rogers
+        </li>
+        <li
+          className="list-group-item"
+        >
+           
+          <b>
+            Publisher:
+          </b>
+           
+          Marvel Comics
+        </li>
+        <li
+          className="list-group-item"
+        >
+           
+          <b>
+            First Appearance:
+          </b>
+           
+          Captain America Comics #1
+        </li>
+      </ul>
+      <button
+        className="btn btn-outline-info"
+        onClick={[Function]}
+      >
+        Regresar
+      </button>
+    </div>
+  </div>
+</div>
+`;
