@@ -2,7 +2,7 @@ import { useMemo, React } from "react";
 import { Navigate, useNavigate, useParams } from "react-router-dom"
 import { getHeroById } from "../../selectors/getheroById";
 
-
+const HeroImages = require.context('../../assets', true); //Forma de Importar la imagenes para su uso (Linea 29), el parametro de true es para buscar en carpetas aniadas
 
 export const HeroesScreen = () => {
 
@@ -20,13 +20,14 @@ export const HeroesScreen = () => {
 
     const { id, superhero, publisher, alter_ego, first_appearance} = hero;
 
-    const imgPath = `/assets/${id}.jpg`;
+    //const imgPath = `/assets/${id}.jpg`;
 
     return (
         <div>
             <div className="row mt-5">
                 <div className="col-4 animate__animated animate__bounceInLeft">
-                    <img src={imgPath} alt={superhero} className="img-thumbnail"></img>
+                    <img src={HeroImages(`./${id}.jpg`)} alt={superhero} className="img-thumbnail"></img>
+                    {/*<img src={imgPath} alt={superhero} className="img-thumbnail"></img>*/}
                 </div>
 
                 <div className="col-8">
